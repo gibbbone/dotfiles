@@ -4,6 +4,7 @@ alias grist='history | grep'
 alias lancia_notebook='source activate env_2.7; nohup jupyter notebook --no-browser --port=8887 &'
 alias to_my_gcp_instance='gcloud compute ssh --zone="us-west2-b" jupyter@"my-fastai-instance" -- -L 8080:localhost:8080'
 alias wrdiary='TODAY=$(date +%Y-%m-%d); micro $TODAY/things.md'
+alias wrtodo='TODAY=$(date +%Y-%m-%d); micro $TODAY/TODO.md'
 alias diary_init='cd /c/Users/Giovanni/Desktop/everyday; TODAY=$(date +%Y-%m-%d); mkdir $TODAY;  printf "# TODO\n### PHD\n\n### The rest\n\n# DONE\n### PHD\n\n### The rest\n\n" > $TODAY/things.md'
 alias tidy_here="stat -c %n,%z,%F * | python tidy_folder.py"
 alias open="cmd.exe /C start"
